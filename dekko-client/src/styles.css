@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+.all_content_wrapper .form-control {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  height: 26px;
+  border: 1px solid #a8d7ea;
+}
+.all_content_wrapper_sample_collection.form-control {
+  height: 24px;
+}
+.all_content_wrapper .input-group-text {
+  border: 1px solid #a8d7ea;
+  border-left: 0px;
+}
+.all_content_wrapper {
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  min-height: 500px;
+  position: relative;
+}
+.pannelArea {
+  width: 100%;
+  height: auto;
+  float: left;
+  background: #fff;
+  border: solid 1px #679cb1;
+  border-radius: 6px;
+  padding: 4px;
+}
+.tabArea.tab-oustom-list.inves-doc-hand-area ul.nav.nav-tabs {
+  float: left;
+  top: -17px;
+  position: relative;
+  left: 4px;
+}
+.tabArea.tab-custom-all {
+  position: relative;
+}
+.tab-custom-all.prescriptionTab .nav-tabs .nav-link.active {
+  color: #fff !important;
+  background-color: none !important;
+}
+input.ng-touched.ng-invalid{
+  border: 1px solid red !important;
+}
+
+.datepicker-days tr th {
+	background: #0690b0;
+	color: #fff;
+	border-radius: 0px !important;
+	font-size: 14px;
+}
+.datepicker-days tr td {
+	font-size: 14px;
+}
+.datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {
+	background: #03748e !important;
+}
+.datepicker-dropdown.datepicker-orient-bottom:after {
+	display: none;
+}
+.datepicker-dropdown.datepicker-orient-bottom:before {
+	display: none;
+}
+.nav-tabs{
+  background-color: lightskyblue !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  border: 1px solid deepskyblue;
+}
+.form-group{
+  height: 80px !important;
+}
+.form-group input{
+  height: 40px !important;
+}

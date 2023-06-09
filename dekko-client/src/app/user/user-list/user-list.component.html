@@ -1,0 +1,37 @@
+<div class="body">
+    <div>
+        <h2>User Details</h2>
+        <div class="d-flex flex-row-reverse">
+            <button (click)="add()" type="button" class="btn btn-info m-3">Add</button>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">SL</th>
+                <th scope="col">User ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile Number </th>
+                <th scope="col">Date Of Birth</th>
+                <th scope="col">Address</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userList; let i=index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{user.userId}}</td>
+                <td>{{user.firstName}} &nbsp; {{user.lastName}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.mobileNumber}}</td>
+                <td>{{user.dateOfBirth | date}}</td>
+                <td>{{user.address}}</td>
+                <td>
+                    <button (click)="edit(user)" type="button" class="btn btn-info">Edit</button>&nbsp;
+                    <button (click)="delete(user)" type="button" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

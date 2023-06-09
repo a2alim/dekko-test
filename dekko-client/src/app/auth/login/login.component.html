@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="row g-0">
+    <div class="col-md-4 login-left-title">
+      <h3>Welcome to <br> Dekko Code Test</h3>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">Please Login</h4>
+        <form [formGroup]="loginForm">
+          <div class="mb-3">
+            <label for="mail" class="form-label">Email</label>
+            <input formControlName="email" type="email" class="form-control" id="mail">
+          </div>
+          <div class="mb-3">
+            <label for="pass" class="form-label">Password</label>
+            <input formControlName="password" type="password" class="form-control" id="pass">
+          </div>
+          <div class="d-flex justify-content-center">
+            <button (click)="reset()" type="button" class="btn btn-info">Reset</button>&nbsp;
+            <button [disabled]="loginForm.invalid" type="button"  class="btn btn-primary"
+              (click)="handleLogin()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

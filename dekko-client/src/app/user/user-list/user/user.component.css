@@ -1,0 +1,25 @@
+.select-date .datePicker {
+    max-width: 120px;
+    height: 26px;
+    border-radius: 0px 25px 25px 0px;
+    border: 1px solid #009688;
+  }
+  h2 {
+    text-align: center;
+    color: #315aa4;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .body {
+    border: 1px solid deepskyblue;
+    padding: 20px !important;
+  }
+  .form-check input {
+    height: 20px !important;
+    width: 20px !important;
+    margin-right: 10px !important;
+  }
+  .form-group {
+    padding-top: 10px;
+  }
+  

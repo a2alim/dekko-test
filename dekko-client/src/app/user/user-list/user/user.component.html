@@ -1,0 +1,70 @@
+<div class="body">
+    <div>
+        <h2>User Information</h2>
+    </div>
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="fName">First Name</label>
+                    <input type="text" formControlName="firstName" class="form-control" id="fName" placeholder="Insert First Name">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="lName">Last Name</label>
+                    <input type="text" formControlName="lastName" class="form-control" id="lName" placeholder="Insert Last Name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email">Email </label>
+                    <input type="email" formControlName="email" class="form-control" id="email" placeholder="Insert Email">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="mobile">Mobile Number </label>
+                    <input type="text" formControlName="mobileNumber" class="form-control" id="mobile" placeholder="Insert Mobile Number">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="address">Address </label>
+                    <input type="text" formControlName="address" class="form-control" id="address" placeholder="Insert Address">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="text"  formControlName="dateOfBirth" class="form-control datePicker" bsDatepicker
+                        [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' }" [maxDate]="maxDob">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="userId">User ID </label>
+                    <input type="text" formControlName="userId" class="form-control" id="userId" placeholder="Insert User ID">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" formControlName="password" class="form-control" id="password" placeholder="Insert password">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex flex-row-reverse">
+                <button (click)="createOrUpdate()" [disabled]="form.invalid" type="button" class="btn btn-success m-3">Submit</button>
+                <button (click)="backToList()" type="button" class="btn btn-primary m-3">Back to List</button>
+            </div>
+        </div>
+    </form>
+</div>
